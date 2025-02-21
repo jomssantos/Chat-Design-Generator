@@ -3,12 +3,14 @@ from PIL import Image, ImageDraw, ImageFont
 import textwrap, math
 
 mensagens = [
-    {"remetente": "Você", "texto": "Acho que só vou descansar um pouco haha"},
-    {"remetente": "Amigo", "texto": "Entendi! Eu tava pensando em sair, mas não sei pra onde"},
-    {"remetente": "Você", "texto": "Podemos ir naquele restaurante novo que abriu no centro!"},
-    {"remetente": "Você", "texto": "Acho que só vou descansar um pouco haha"},
-    {"remetente": "Amigo", "texto": "Entendi! Eu tava pensando em sair, mas não sei pra onde"},
-    {"remetente": "Você", "texto": "Podemos ir naquele restaurante novo que abriu no centro!"},
+    {"remetente": "Você", "texto": "Olá, tudo bem?"},
+    {"remetente": "Amigo", "texto": "Oi, estou bem e você?"},
+    {"remetente": "Você", "texto": "Estou bem também"},
+    {"remetente": "Você", "texto": "Você entende de Python?"},
+    {"remetente": "Amigo", "texto": "Um pouco, eu faço alguns códigos vez ou outra."},
+    {"remetente": "Amigo", "texto": "Você já pegou algum bom projeto?"},
+    {"remetente": "Amigo", "texto": "Para quem é iniciante é difícil conseguir clientes, aparentemente."},
+    {"remetente": "Você", "texto": "Eu concordo. Ainda não peguei nenhum bom projeto."},
 ]
 
 LARGURA = 1000
@@ -31,8 +33,6 @@ def interpolar_cor(y, altura_total, cor_inicial, cor_final):
 def calcular_altura_mensagem(texto):
     linhas = textwrap.wrap(texto, width=30)
     return (len(linhas) * (FONTE_TAMANHO + 10)) + 30
-
-
 
 y_atual = ALTURA_BASE
 baloes = []
@@ -148,7 +148,7 @@ imagem = Image.open("baloes.png")
 draw = ImageDraw.Draw(imagem)
 
 
-fonte = ImageFont.truetype("Instagram Sans.ttf", FONTE_TAMANHO)
+fonte = ImageFont.truetype("font.ttf", FONTE_TAMANHO)
 for texto, x, y, largura, altura in baloes:
     linhas = textwrap.wrap(texto, width=30)
     altura_texto = len(linhas) * (FONTE_TAMANHO + 10)
