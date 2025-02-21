@@ -5,7 +5,7 @@ Um gerador de chat com listas de mensagens totalmente editáveis com design base
 
 2 - Ele usa essa lista para gerar a altura total da imagem. 
 
-3 - Essas informações são usadas pelo pycairo para desenhar os balões na imagem além do ícone de perfil para mensagens recebidas. As mensagens enviadas ("Você") tem um gradiente de roxo para azul conforme se aproxima da base da imagem. Nessa etapa também são geradas as informações para as posições dos textos e as guarda na lista. Essa imagem já editada é salva para ser usada pelo Pillow em seguida.
+3 - Essas informações são usadas pelo pycairo para desenhar os balões na imagem além do ícone de perfil para mensagens recebidas. As mensagens enviadas ("Você") tem um gradiente de roxo para azul conforme se aproxima da base da imagem. Nessa etapa também são geradas as informações para as posições dos textos e depois são guardados em uma lista. Essa imagem já editada é salva para ser usada pelo Pillow em seguida.
 
 4 - Essa imagem gerada é carregada pelo Pillow e a lista é usada para posicionar os textos exatamente dentro de cada balão.
 
