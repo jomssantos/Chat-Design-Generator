@@ -11,7 +11,11 @@ Um gerador de chat com listas de mensagens totalmente editáveis com design base
 <img src="https://github.com/user-attachments/assets/24064cce-d397-4f95-b866-fd2a06b1b6d5" width="400px" />
 </div>
 
-4 - Essa imagem gerada é carregada pelo Pillow e a lista é usada para posicionar os textos exatamente dentro de cada balão.
+4 - Essa imagem gerada é carregada pelo Pillow para que ele coloque os textos das mensagens usando a lista para posicioná-los exatamente dentro de cada balão.
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/719a575c-95b5-4686-a6e2-3895083691e5" width="400px" />
+</div>
 
 5 - A imagem final com todas as edições é salva.
 
