@@ -36,4 +36,4 @@ Um gerador de chat com listas de mensagens totalmente editáveis com design base
 <img src="https://github.com/user-attachments/assets/719a575c-95b5-4686-a6e2-3895083691e5" width="400px" />
 </div>
 
-5 - A imagem final com todas as edições é salva.
+5 - A imagem final com todas as edições é salva em jpg.
